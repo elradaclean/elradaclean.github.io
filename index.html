@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>شركة الرضا لخدمات تنظيف المنازل والشركات</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     body {font-family: 'Cairo', Arial, sans-serif; background: #f6f6f6; margin: 0;}
     header { background: #2c7c7c; color: #fff; padding: 30px 0; text-align: center;}
@@ -15,18 +17,19 @@
     .service-card {background: #f0f0f0; padding: 18px; border-radius: 10px; box-shadow: 0 0 7px #eee;}
     .contact-block {background: #e8fffa; padding: 15px; border-radius: 10px; margin-bottom: 25px;}
     .contact-block a {color: #147f7f; font-weight:bold;}
-    .map, .videos, .gallery {margin-top: 30px;}
-    .videos {display: flex; gap: 20px;}
-    iframe, video {border-radius: 10px;}
+    .gallery {margin-top: 30px;}
     .gallery-images {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;}
     .gallery-images img {width: 100%; border-radius: 12px; box-shadow: 0 0 10px #ddd;}
     form {margin-top: 30px;}
     label {display: block; margin: 12px 0 4px;}
     input, textarea {width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #bbb; border-radius: 5px;}
-    button, .call-btn, .whatsapp-btn {background: #2c7c7c; color: #fff; padding: 10px 24px; border: none; border-radius: 5px; font-size: 16px; text-decoration: none; margin: 5px; display: inline-block;}
+    button, .call-btn, .whatsapp-btn {padding: 10px 24px; border: none; border-radius: 5px; font-size: 16px; text-decoration: none; margin: 5px; display: inline-block; transition: background 0.2s;}
+    .whatsapp-btn {background: #25d366; color: #fff;}
+    .call-btn {background: #0c8a15; color: #fff;}
+    .whatsapp-btn i {margin-left:7px;}
+    .call-btn i {margin-left:7px;}
     @media (max-width: 900px) {
       .services {grid-template-columns: 1fr;}
-      .videos {flex-direction: column;}
       .container {padding: 8px;}
       .gallery-images {grid-template-columns: 1fr;}
     }
@@ -36,15 +39,18 @@
   <header>
     <h1>شركة الرضا لخدمات تنظيف المنازل والشركات</h1>
     <p>نظافة محترفة للمنازل والشركات بأيدي فريق متخصص</p>
-    <a href="tel:01024431853" class="call-btn">اتصل الآن</a>
-    <a href="https://wa.me/201104490859" class="whatsapp-btn" target="_blank">واتساب الآن</a>
+    <a href="tel:01024431853" class="call-btn">
+      <i class="fas fa-phone-alt"></i>اتصل الآن
+    </a>
+    <a href="https://wa.me/201104490859" class="whatsapp-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i>واتساب الآن
+    </a>
   </header>
   <nav>
     <a href="#services">خدماتنا</a>
     <a href="#gallery">صور التنظيف</a>
     <a href="#contact">التواصل</a>
     <a href="#map">الموقع</a>
-    <a href="#videos">فيديوهات</a>
     <a href="#order">طلب خدمة</a>
   </nav>
 
@@ -84,10 +90,10 @@
     <section id="gallery" class="gallery">
       <h2>صور من أعمالنا</h2>
       <div class="gallery-images">
-        <img src="https://images.unsplash.com/photo-1560184897-ae75a255c6b3?auto=format&fit=crop&w=600&q=80" alt="تنظيف منزل">
-        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="تنظيف غرفة">
-        <img src="https://images.unsplash.com/photo-1503256207526-0d5a07580c22?auto=format&fit=crop&w=600&q=80" alt="تنظيف مطبخ">
-        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="تنظيف أرضية">
+        <img src="https://assets.jimstatic.com/web/image/57821d3b0c2a6f48/original/IMG-20230711-WA0007.jpg" alt="تنظيف الرضا 1">
+        <img src="https://assets.jimstatic.com/web/image/57821d3b0c2a70f8/original/IMG-20230711-WA0006.jpg" alt="تنظيف الرضا 2">
+        <img src="https://assets.jimstatic.com/web/image/57821d3b0c2a6a70/original/IMG-20230711-WA0005.jpg" alt="تنظيف الرضا 3">
+        <img src="https://assets.jimstatic.com/web/image/57821d3b0c2a6c93/original/IMG-20230711-WA0009.jpg" alt="تنظيف الرضا 4">
       </div>
     </section>
 
@@ -96,10 +102,11 @@
       <h2>التواصل مع الشركة</h2>
       <div class="contact-block">
         <span>الهاتف:</span>
-        <a href="tel:01024431853">0102 443 1853</a><br>
+        <a href="tel:01024431853"><i class="fas fa-phone-alt"></i> 0102 443 1853</a><br>
         <span>واتساب:</span>
-        <a <a href="https://wa.me/201104490859" class="whatsapp-btn" target="_blank" style="background:#>
-</a>
+        <a href="https://wa.me/201104490859" class="whatsapp-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> 0110 449 0859
+        </a><br>
         <span>البريد الإلكتروني:</span>
         <a href="mailto:info@elradaclean.com">info@elradaclean.com</a>
       </div>
@@ -109,24 +116,6 @@
     <section id="map" class="map">
       <h2>موقعنا على الخريطة</h2>
       <iframe src="https://share.google/0OlzRnreF5csU5C5X" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-
-    <!-- فيديوهات تنظيف -->
-<section id="videos" class="videos">
-  <h2>فيديوهات عن التنظيف</h2>
-  <!-- فيديو يوتيوب -->
-  <iframe width="320" height="180" src="https://www.youtube.com/embed/ADvV9WQHQuY" title="تنظيف المنازل" frameborder="0" allowfullscreen></iframe>
-  <!-- فيديو يوتيوب -->
-  <iframe width="320" height="180" src="https://www.youtube.com/embed/8k_7b0FQpUg" title="تنظيف غرفة" frameborder="0" allowfullscreen></iframe>
-  <!-- فيديو فيسبوك الأول -->
-  <iframe src="https://www.facebook.com/share/v/1CMLoonfaf/embed" width="320" height="180" style="border:none;overflow:hidden" scrolling="no" allowfullscreen></iframe>
-  <!-- فيديو فيسبوك الثاني -->
-  <iframe src="https://www.facebook.com/share/v/14G4Szo6mJC/embed" width="320" height="180" style="border:none;overflow:hidden" scrolling="no" allowfullscreen></iframe>
-</section>
-    <section id="videos" class="videos">
-      <h2>فيديوهات عن التنظيف</h2>
-      <iframe width="320" height="180" src="https://www.youtube.com/embed/ADvV9WQHQuY" title="تنظيف المنازل" frameborder="0" allowfullscreen></iframe>
-      <iframe width="320" height="180" src="https://www.youtube.com/embed/8k_7b0FQpUg" title="تنظيف غرفة" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <!-- نموذج طلب خدمة -->

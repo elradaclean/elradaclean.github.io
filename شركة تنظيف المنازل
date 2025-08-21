@@ -67,7 +67,72 @@
   </header>
 
   <nav>
-    <a href="#services">خدماتنا</a>
+    <!-- زر خدماتنا مع قائمة منسدلة -->
+<style>
+/* تنسيقات الزر */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: #0056b3;
+}
+
+/* تنسيقات القائمة */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* إظهار القائمة عند المرور */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<div class="dropdown">
+  <button>خدماتنا</button>
+  <div class="dropdown-content">
+    <a href="tanzeef-almanazel.html">🧹 تنظيف المنازل</a>
+    <a href="tanzeef-alsharikat.html">🏢 تنظيف الشركات</a>
+    <a href="tanzeef-alfellat.html">🏠 تنظيف الفلل</a>
+    <a href="tanzeef-alqusoor.html">🏰 تنظيف القصور</a>
+    <a href="tanzeef-almafroshat.html">🛋️ تنظيف المفروشات</a>
+    <a href="tanzeef-baad-altashteeb.html">🛠️ تنظيف بعد التشطيب</a>
+    <a href="afdal-sharikat-tanzeef-cairo.html">⭐ افضل شركات تنظيف في القاهرة</a>
+    <a href="afdal-sharikat-tanzeef-tagamo3.html">⭐ افضل شركات تنظيف في التجمع</a>
+    <a href="afdal-sharikat-tanzeef-madinaty.html">⭐ افضل شركات تنظيف في مدينتي</a>
+    <a href="asaar-sharikat-tanzeef.html">💲 اسعار شركات التنظيف</a>
+  </div>
+</div>
     <a href="#gallery">صور التنظيف</a>
     <a href="#contact">التواصل</a>
     <a href="#map">الموقع</a>
@@ -253,14 +318,6 @@
     margin: 25px 0;
   }
 </style>
-
-<!-- زر التقييم في منتصف الصفحة -->
-<div class="review-container">
-  <a href="https://maps.app.goo.gl/BQoPST31bupR1cs69" 
-     target="_blank" 
-     class="review-btn">
-     ⭐ شاهد آراء عملائنا على Google Map
-  </a>
 </div>
 <div class="container">
     <!-- خدمات الشركة -->
@@ -292,92 +349,273 @@
           <p>تنظيف الحدائق، تنظيف بعد التشطيب، تلميع الأرضيات، وغير ذلك حسب طلب العميل.</p>
         </div>
       </div>                
-    </section>
-          <html lang="ar" dir="rtl">
+    <!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="windows-2000">
-<title>خصم 15% لأول مرة و50% للعملاء المنتظمين</title>
-<style>
+  <meta charset="UTF-8">
+  <title>خدمات شركة الرضا</title>
+  <style>
     body {
-        background: url('bg.jpg') no-repeat center center fixed; 
-        background-size: cover; /* تجعل الصورة تغطي الشاشة بالكامل */
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 20px;
+      font-family: 'Cairo', Arial, sans-serif;
     }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .service-list, .gold-box {
+      width: 40%;
+      background: linear-gradient(45deg, #d4af37, #f5d76e);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      color: black;
+    }
+
+    .service-list {
+      order: 1; /* تظهر في اليمين لأن الصفحة RTL */
+    }
+
     .gold-box {
-        color: black; /* النص غامق عشان يظهر على الخلفية الذهبية */
-        text-align: center;
-        background: linear-gradient(45deg, #d4af37, #f5d76e); /* خلفية ذهبية متدرجة */
-        padding: 20px;
-        border-radius: 10px;
-        max-width: 800px;
-        margin: 40px auto;
-        box-shadow: 0 0 15px rgba(0,0,0,0.3); /* ظل خفيف */
+      order: 2; /* تظهر في الشمال */
     }
-</style>
+
+    .service-item {
+      margin-bottom: 20px;
+    }
+
+    .service-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .service-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .underline {
+      flex: 1;
+      border-bottom: 2px solid red;
+      margin-left: 10px;
+    }
+
+    .percent {
+      font-weight: bold;
+      color: black;
+    }
+
+    .gold-box h2 {
+      margin-top: 20px;
+    }
+
+    .gold-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .service-list, .gold-box {
+        width: 100%;
+        order: unset;
+      }
+    }
+  </style>
 </head>
-
 <body>
-<div class="Section1 gold-box">
 
-<p style="font-size:22px; font-weight:bold;">خصم 15% لأول مرة و50% للعملاء المنتظمين!</p>
+<div class="container">
 
-<p style="font-size:18px;">1. خدمة التنظيف العميق – نظافة من الجذور ✨</p>
-<p style="font-size:18px;">2. تنظيف الغرف: الأرضيات، الحوائط، الأسقف، المفروشات</p>
-<p style="font-size:18px;">3. المطبخ: الدهون، الشفاط، الأجهزة، الرخام</p>
-<p style="font-size:18px;">4. الحمام: تعقيم شامل، تنظيف المرايات، السيراميك</p>
-<p style="font-size:18px;">5. تلميع النجف، الأبواب، الشبابيك، إزالة البقع</p>
+  <!-- الخدمات في اليمين -->
+  <div class="service-list">
+    <div class="service-item">
+      <div class="service-name">تنظيف المنازل</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">تنظيف السجاد والموكيت</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">التنظيف بعد التشطيب</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">تنظيف الانتريهات و الصالون</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">النظافه التأسيسية للشركات</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">تنظيف الستائر والمفروشات</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">تنظيف الفلل والقصور</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">جلي الرخام والارضيات</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">تنظيف عميق</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+    <div class="service-item">
+      <div class="service-name">عاملات تنظيف المنازل</div>
+      <div class="service-bar"><span class="underline"></span> <span class="percent">99%</span></div>
+    </div>
+  </div>
 
-<h2>🏗 تنظيف ما بعد التشطيب - بدقة احترافية</h2>
-<ul style="list-style:none; padding:0;">
-    <li>إزالة مخلفات الدهانات، الجبس، الأسمنت</li>
-    <li>تنظيف وتعقيم الحمامات والمطابخ</li>
-    <li>تلميع الزجاج، الألوميتال، الأرضيات بجميع أنواعها</li>
-</ul>
+  <!-- الخصومات والمميزات في الشمال -->
+  <div class="gold-box">
+    <p style="font-size:18px; font-weight:bold;">خصم 15% لأول مرة و50% للعملاء المنتظمين!</p>
 
-<h2>💎 مميزاتنا</h2>
-<ul style="list-style:none; padding:0;">
-    <li>فريق نسائي محترف وملتزم</li>
-    <li>معدات متطورة ومواد تنظيف آمنة 100%</li>
-    <li>مرونة في المواعيد وتغطية القاهرة والجيزة وأكتوبر</li>
-</ul>
+    <p>1. خدمة التنظيف العميق – نظافة من الجذور ✨</p>
+    <p>2. تنظيف الغرف: الأرضيات، الحوائط، الأسقف، المفروشات</p>
+    <p>3. المطبخ: الدهون، الشفاط، الأجهزة، الرخام</p>
+    <p>4. الحمام: تعقيم شامل، تنظيف المرايات، السيراميك</p>
+    <p>5. تلميع النجف، الأبواب، الشبابيك، إزالة البقع</p>
 
-</div>
-</body>
-</html>
+    <h2>🏗 تنظيف ما بعد التشطيب</h2>
+    <ul>
+      <li>إزالة مخلفات الدهانات، الجبس، الأسمنت</li>
+      <li>تنظيف وتعقيم الحمامات والمطابخ</li>
+      <li>تلميع الزجاج، الألوميتال، الأرضيات بجميع أنواعها</li>
+    </ul>
+
+    <h2>💎 مميزاتنا</h2>
+    <ul>
+      <li>فريق نسائي محترف وملتزم</li>
+      <li>معدات متطورة ومواد تنظيف آمنة 100%</li>
+      <li>مرونة في المواعيد وتغطية القاهرة والجيزة وأكتوبر</li>
+    </ul>
+  </div>
+
   </section>
 
     <!-- معرض الصور -->
-   <style>
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>قبل وبعد التنظيف - شركة الرضا لخدمات التنظيف</title>
+  <style>
+    body { 
+      margin: 20px; 
+      font-family: system-ui, sans-serif; 
+      text-align: center; 
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+    .video {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* نسبة 16:9 */
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      margin-top: 10px;
+    }
+    .video iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .label {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-grid">
+    <div>
+      <div class="label">قبل وبعد التنظيف – ( شركة الرضا لخدمات التنظيف ) – بعض أعمالنا</div>
+      <div class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/0-0lQ6bn-Vk"
+          title="قبل وبعد التنظيف"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <div>
+      <div class="label">قبل وبعد التنظيف – ( شركة الرضا لخدمات التنظيف ) – بعض أعمالنا</div>
+      <div class="video">
+        <iframe 
+          src="https://www.youtube.com/embed/FOulcSpuHhY"
+          title="قبل وبعد التنظيف"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<div class="video-grid" style="margin-top:40px;">
+  <iframe class="big-video wide-video" src="https://www.youtube.com/embed/FEGEEtDTce0" allowfullscreen></iframe>
+  <iframe class="big-video" src="https://www.youtube.com/embed/WAi8SuFURZg" allowfullscreen></iframe>
+</div>
+
+<style>
+/* الفيديوهات بشكل عام */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 35px;
 }
+
+/* حجم الفيديو */
 .video-grid iframe {
   width: 100%;
   height: 300px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
-@media (min-width: 768px) {
-  .video-grid iframe {
-    height: 400px;
+
+/* الفيديو الكبير */
+.wide-video {
+  grid-column: span 2; /* ياخد عرض عمودين */
+}
+
+@media (max-width: 768px) {
+  .wide-video {
+    grid-column: span 1; /* في الموبايل يرجع عادي */
   }
 }
 </style>
 
-<div class="video-grid">
-  <iframe src="https://www.youtube.com/embed/FEGEEtDTce0" allowfullscreen></iframe>
-  <iframe src="https://www.youtube.com/embed/evKc2LYCWOY" allowfullscreen></iframe>
-  <iframe src="https://www.youtube.com/embed/WAi8SuFURZg" allowfullscreen></iframe>
-</div>
-
-
-    </section>
-
-    <section>
+   <section>
     <h2>📸 صور من أعمالنا</h2>
 
 <style>
@@ -406,7 +644,10 @@
 </style>
 
 <div class="Ad1yL">
-    <!-- ضع هنا جميع الصور الموجودة في الكود -->
+    <!-- الصورة الجديدة -->
+    <img class="Xpja1" src="https://lh3.googleusercontent.com/rd-saves/AA8Ys25dfqA-DkIRqx7XO8d4zuS-8Yg0xPZhi6dJi1Fu3T6APdb-NA1Vw-HNpiEL9qSc5B1NeXAR5WPtjEjmbez92IPPcCVaNco3F1rcRFcuX0aHLIpT2UG-MeRpCyNoUrc4KHWPi5FcF-xDZ8OOvMJ6MVRNqJs3ToE4-qp393a6BAwOMRmdjvgIfVbku_-tNe090Pw9trhCDDvSi_zgh_oab_2AVsKruCH37JIiqQYug6br-VsjAKkhdCHTwC-o3zDWwDhM0kByFk4Fc66mM_3aUOAIU7qorROYRKIIGZEAHnD-4_Y8RgzhkzCfN-ILXfaUdIP3K5TnZvdAorTFqy_5auSlRuUYURM-kqv-winMbubUGwKqOCwtB2rFHymhn5qgbRmiN6hzZNc2dKonJvYwyaPRUD7ab0rl_aCll1xIeQgjXV-36rp114C--KbVx9mOLuUDr58lrlAasJ0MP1Dm_uDKgmnVeso3YLHTPulkJofvFAgJB3FKfIuM92HNlmLD7jgByt9ZQkvU1lQTFyiCED4yhUqQ8-RwsmV1TnpSWJDXNdp_X_E3O-6ykeCfxySKqx9cJSXsnUTNARtiEdUjIdNLnlzYkSCYe09HhbD38TEvTkBJd_PNX0uqrphcT4ZRqAUpApqU6naAq9r2jFteGzV1XXYA3aU94_3LCZQnN-YQ6Ju7G1IGNZNxrZq_XwUEdKtqzvBSfN0bCX4yDuyqF9Ng73H7dBgCBV7yAm3JUqg5xshkEIkNCrbS6h16RSYNY0S0a9bDJ2BhDTSbWBtMBHb18z-5I46lGecrETWMPDcoW_YT58fN4CxGQV3_6Rb1zy_F7mRy4dL_AO2DbGhCt4If0aGY2qmZ4JB7j2hcdrZkTIA2Y4ZL66pnZ6dUJk1Q5WDsK5aF4ag3u06xo6SLCAHmtSr1x32h3dN-rGyeFmxWS8ffMNAG0e7a8P1odBKGlIxDVDMoe3D1G5gtTVafF7umuGB4-VNNxA1S2fFnh4WukzN2oOVdE9EYfcNuUt4ZunqJoMc8ySTrwbF7hu9KjNmOIMxkFntltl4zpCWXCdUZCj7chgf-LT_nznEg4hughov4rmsS8OwKvNT3IJnBo9qXRj0Vuckaff4cZtQXkM9eZjAMrzA6k_R2QtwQxIN-kTv4r4EXLHAp0se2EfZ8T_ygIFR5hdKGIUsb1dXYrgtED2YMOdkvgT4ulES6_ssh6_FJ0igBnFgXcHfHpX-CUS1LG-q642nj1nAbo4O8Wp8vb9RH_AOve9HHmPiKkQzYJ4z1jvMb0VhIKpvc=s1926-w1926-h1280-n-k?authuser=0" alt="">
+
+    <!-- باقي الصور -->
     <img class="Xpja1" src="https://storage.e.jimdo.com/cdn-cgi/image/quality=85,width=800,height=424/image/522286008/9f4ddaba-2c26-4b5e-9f87-9125662079d3.jpg" alt="">
     <img class="Xpja1" src="https://storage.e.jimdo.com/cdn-cgi/image/quality=85,width=800,height=568/image/522285980/5accf459-96b9-41fa-b37b-0c0329c267fd.jpg" alt="">
     <img class="Xpja1" src="https://storage.e.jimdo.com/cdn-cgi/image/quality=85,width=800,height=424/image/522285200/41fe96b0-263a-4ad2-aaad-f81d04d40b20.jpg" alt="">
@@ -417,20 +658,20 @@
     <img class="Xpja1" src="https://storage.e.jimdo.com/cdn-cgi/image/quality=85,width=800,height=534/image/522285494/0d9079b8-06d3-46ea-a118-fd163033414b.jpg" alt="">
 </div>
 
-<!-- رابط مكتبة Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   </section>
-        <!-- خريطة جوجل -->
-    <section id="map" class="map">
-      <h2>📍 موقعنا على الخريطة</h2>
-<iframe 
-    src="https://www.google.com/maps?q=شركة الرضا لخدمات تنظيف المنازل والشركات&output=embed"
-    width="100%" 
-    height="500" 
-    style="border:0; border-radius:10px;" 
-    allowfullscreen="" 
-    loading="lazy">
-</iframe>
+
+<!-- خريطة جوجل -->
+<section id="map" class="map" style="text-align:center;">
+  <h2>📍 موقعنا على الخريطة</h2>
+  <iframe 
+      src="https://www.google.com/maps?q=شركة الرضا لخدمات تنظيف المنازل والشركات&output=embed"
+      width="90%" 
+      height="500" 
+      style="border:1px solid #ccc; border-radius:30px; display:block; margin:0 auto;" 
+      allowfullscreen="" 
+      loading="lazy">
+  </iframe>
+</section>
+
     </section>
 <!-- مكتبة Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -904,4 +1145,3 @@ color:#212529'>هناك عروض علي جلي الرخام &nbsp;وتلميعة
   gtag('js', new Date());
 
   gtag('config', 'AW-11482936231');
-

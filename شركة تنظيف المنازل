@@ -616,7 +616,7 @@
 </style>
 
    <section id="gallery">
-    <h2>📸 صور من أعمالنا</h2>
+<h2>📸 صور من أعمالنا</h2>
 
 <style>
     /* حاوية الصور */
@@ -629,8 +629,8 @@
 
     /* الصور نفسها */
     .Ad1yL .Xpja1 {
-        width: 48% !important; /* عرض كل صورة للنصف تقريبًا */
-        height: auto !important;
+        width: 48%; /* عرض كل صورة للنصف تقريبًا */
+        height: auto;
         border-radius: 8px; /* حواف ناعمة */
         box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* ظل بسيط */
     }
@@ -638,14 +638,14 @@
     /* على الشاشات الصغيرة */
     @media (max-width: 768px) {
         .Ad1yL .Xpja1 {
-            width: 100% !important; /* على الموبايل، الصورة تأخذ العرض كامل */
+            width: 100%; /* على الموبايل، الصورة تأخذ العرض كامل */
         }
     }
 </style>
 
 <div class="Ad1yL">
-    <!-- الصورة الجديدة -->
-    <img class="Xpja1" src="https://lh3.googleusercontent.com/rd-saves/AA8Ys25dfqA-DkIRqx7XO8d4zuS-8Yg0xPZhi6dJi1Fu3T6APdb-NA1Vw-HNpiEL9qSc5B1NeXAR5WPtjEjmbez92IPPcCVaNco3F1rcRFcuX0aHLIpT2UG-MeRpCyNoUrc4KHWPi5FcF-xDZ8OOvMJ6MVRNqJs3ToE4-qp393a6BAwOMRmdjvgIfVbku_-tNe090Pw9trhCDDvSi_zgh_oab_2AVsKruCH37JIiqQYug6br-VsjAKkhdCHTwC-o3zDWwDhM0kByFk4Fc66mM_3aUOAIU7qorROYRKIIGZEAHnD-4_Y8RgzhkzCfN-ILXfaUdIP3K5TnZvdAorTFqy_5auSlRuUYURM-kqv-winMbubUGwKqOCwtB2rFHymhn5qgbRmiN6hzZNc2dKonJvYwyaPRUD7ab0rl_aCll1xIeQgjXV-36rp114C--KbVx9mOLuUDr58lrlAasJ0MP1Dm_uDKgmnVeso3YLHTPulkJofvFAgJB3FKfIuM92HNlmLD7jgByt9ZQkvU1lQTFyiCED4yhUqQ8-RwsmV1TnpSWJDXNdp_X_E3O-6ykeCfxySKqx9cJSXsnUTNARtiEdUjIdNLnlzYkSCYe09HhbD38TEvTkBJd_PNX0uqrphcT4ZRqAUpApqU6naAq9r2jFteGzV1XXYA3aU94_3LCZQnN-YQ6Ju7G1IGNZNxrZq_XwUEdKtqzvBSfN0bCX4yDuyqF9Ng73H7dBgCBV7yAm3JUqg5xshkEIkNCrbS6h16RSYNY0S0a9bDJ2BhDTSbWBtMBHb18z-5I46lGecrETWMPDcoW_YT58fN4CxGQV3_6Rb1zy_F7mRy4dL_AO2DbGhCt4If0aGY2qmZ4JB7j2hcdrZkTIA2Y4ZL66pnZ6dUJk1Q5WDsK5aF4ag3u06xo6SLCAHmtSr1x32h3dN-rGyeFmxWS8ffMNAG0e7a8P1odBKGlIxDVDMoe3D1G5gtTVafF7umuGB4-VNNxA1S2fFnh4WukzN2oOVdE9EYfcNuUt4ZunqJoMc8ySTrwbF7hu9KjNmOIMxkFntltl4zpCWXCdUZCj7chgf-LT_nznEg4hughov4rmsS8OwKvNT3IJnBo9qXRj0Vuckaff4cZtQXkM9eZjAMrzA6k_R2QtwQxIN-kTv4r4EXLHAp0se2EfZ8T_ygIFR5hdKGIUsb1dXYrgtED2YMOdkvgT4ulES6_ssh6_FJ0igBnFgXcHfHpX-CUS1LG-q642nj1nAbo4O8Wp8vb9RH_AOve9HHmPiKkQzYJ4z1jvMb0VhIKpvc=s1926-w1926-h1280-n-k?authuser=0" alt="">
+    <!-- صورة من Google Drive -->
+    <img class="Xpja1" src="https://lh3.googleusercontent.com/d/1MUl22exrpPbrTas7kNj8HBd3B-Vm8XYG" alt="صورة من Google Drive">
 
     <!-- باقي الصور -->
     <img class="Xpja1" src="https://storage.e.jimdo.com/cdn-cgi/image/quality=85,width=800,height=424/image/522286008/9f4ddaba-2c26-4b5e-9f87-9125662079d3.jpg" alt="">
@@ -1115,27 +1115,59 @@ style='font-family:"Segoe UI";color:#212529'><span dir=LTR></span>.<br>
 </span><u><span lang=AR-EG dir=RTL style='font-size:16.0pt;font-family:"Segoe UI";
 color:#212529'>هناك عروض علي جلي الرخام &nbsp;وتلميعة وتعقيم المكاتب والشركات</span></u></p>
 
-    </section>
-    <!-- نموذج طلب خدمة -->
-    <section id="order">
-      <h2>طلب خدمة تنظيف</h2>
-      <form>
-        <label for="name">الاسم:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="phone">رقم الهاتف:</label>
-        <input type="text" id="phone" name="phone" required>
-        <label for="service">نوع الخدمة المطلوبة:</label>
-        <input type="text" id="service" name="service" required>
-        <label for="message">ملاحظات:</label>
-        <textarea id="message" name="message" rows="3"></textarea>
-        <button type="submit">إرسال الطلب</button>
-      </form>
-      <p>أو تواصل معنا مباشرة عبر <a href="https://wa.me/201104490859" target="_blank">واتساب</a> أو الهاتف.</p>
-    </section>
-    </section>
-  </main>
-  </div>
-</body>
+    </script>
+</style>
+<!-- معلومات التواصل -->
+<section id="contact">
+  <h2>التواصل مع الشركة</h2>
+  <div class="contact-block">
+
+    <!-- زر الاتصال -->
+    <a href="tel:01024431853"
+       onclick="return gtag_report_conversion('tel:01104490859')"
+       class="gold-btn">
+      <i class="fas fa-phone-alt"></i> 📞 اتصال 0102 443 1853
+    </a>
+
+    <!-- زر واتساب -->
+    <a href="https://wa.me/201104490859"
+       onclick="return gtag_report_conversion('https://wa.me/201104490859')"
+       class="gold-btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> 💬 واتساب 0110 449 0859
+    </a>
+</section>
+
+<style>
+  /* التنسيقات خاصة فقط بقسم التواصل */
+  #contact {
+    text-align: center;
+    margin: 40px 0;
+    direction: ltr; /* نخلي اتجاه القسم مستقل عشان ما يأثرش */
+  }
+  #contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+    direction: rtl; /* العنوان فقط من اليمين */
+  }
+  #contact .contact-block .gold-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    background: linear-gradient(45deg, #d4af37, #f5d76e);
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  #contact .contact-block .gold-btn i {
+    margin-left: 8px;
+  }
+  #contact .contact-block .gold-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
 </html>
                 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482936231"></script>
@@ -1145,3 +1177,4 @@ color:#212529'>هناك عروض علي جلي الرخام &nbsp;وتلميعة
   gtag('js', new Date());
 
   gtag('config', 'AW-11482936231');
+  

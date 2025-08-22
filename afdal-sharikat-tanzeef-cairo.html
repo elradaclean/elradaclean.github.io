@@ -2237,3 +2237,39 @@ line-break;box-sizing: border-box;font-size:inherit !important">
   }
 </script>
 </style>
+
+<!-- مكتبة Font Awesome للأيقونات -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<a href="https://elradaclean.github.io/" class="home-fixed" rel="noopener">
+  <i class="fa-solid fa-house"></i>
+  <span>الصفحة الرئيسية</span>
+</a>
+
+<style>
+  .home-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;              /* ✨ بدلناها من right إلى left */
+    background: #000;         /* خلفية سوداء */
+    color: #d4af37;           /* نص وأيقونة ذهبية */
+    font-size: 22px;
+    font-weight: bold;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,.3);
+    transition: transform .2s ease, opacity .2s ease;
+    z-index: 9999;
+  }
+  .home-fixed i {
+    font-size: 28px;          /* حجم الأيقونة */
+  }
+  .home-fixed:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+</style>

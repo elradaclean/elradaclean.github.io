@@ -378,3 +378,68 @@ color:#212529">تنظيف الفلل بعد التشطيب أمر يبحث عن�
 
 
 </body></html>
+
+   </section>
+<!-- مكتبة Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- واتساب -->
+<a id="whatsapp-fixed" href="https://wa.me/201104490859" target="_blank"
+   onclick="return gtag_report_conversion('https://wa.me/201104490859')">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- اتصال -->
+<a id="call-fixed" href="tel:01104490859"
+   onclick="return gtag_report_conversion('tel:01024431853')">
+    <i class="fas fa-phone"></i>
+</a>
+
+<style>
+#whatsapp-fixed, #call-fixed {
+    position: fixed;
+    right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+#whatsapp-fixed {
+    bottom: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+}
+#call-fixed {
+    bottom: 110px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+}
+#whatsapp-fixed:hover, #call-fixed:hover {
+    transform: scale(1.1);
+}
+</style>
+
+<!-- كود التحويل -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof url !== 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11482936231/ciiOCMbt2IcbEKfnvuMq'
+      'value': 1.0,
+      'currency': 'EGP',
+      'event_callback': callback
+    });
+    return false;
+  }
+</script>
+</style>

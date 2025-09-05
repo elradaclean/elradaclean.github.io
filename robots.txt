@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elradaclean.github.io/sitemap.xml

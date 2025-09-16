@@ -2273,3 +2273,41 @@ line-break;box-sizing: border-box;font-size:inherit !important">
     opacity: 0.9;
   }
 </style>
+  ... باقي كود الصفحة ...
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482936231"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11482936231');
+  </script>
+
+  <!-- Conversion tracking on Call & WhatsApp buttons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var callBtn = document.getElementById("callBtn");
+      var whatsappBtn = document.getElementById("whatsappBtn");
+
+      if (callBtn) {
+        callBtn.addEventListener("click", function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11482936231/ciiOCMbt2IcbEKfnvuMq'
+          });
+        });
+      }
+
+      if (whatsappBtn) {
+        whatsappBtn.addEventListener("click", function() {
+          gtag('event', 'conversion', {
+            'send_to': 'AW-11482936231/ciiOCMbt2IcbEKfnvuMq'
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

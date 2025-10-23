@@ -1,4 +1,13 @@
+# ملف robots.txt لموقع شركة الرضا لخدمات التنظيف
+# يسمح لجميع محركات البحث بأرشفة الموقع بالكامل
+
 User-agent: *
 Allow: /
 
+# حظر ملفات غير ضرورية للفهرسة (اختياري)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /tmp/
+
+# رابط خريطة الموقع
 Sitemap: https://elradaclean.github.io/sitemap.xml

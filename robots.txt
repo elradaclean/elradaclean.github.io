@@ -11,3 +11,4 @@ Disallow: /tmp/
 
 # رابط خريطة الموقع
 Sitemap: https://elradaclean.github.io/sitemap.xml
+Sitemap: https://elradaclean.github.io/sitemap-index.xml

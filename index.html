@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <!-- إعدادات أساسية لسرعة وأداء 100% -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,12 +12,12 @@
     <meta name="author" content="شركة الرضا لخدمات التنظيف">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-    <!-- Preconnect لتسريع تحميل الخطوط (PageSpeed Optimization) -->
+    <!-- Preconnect لتسريع تحميل الخطوط -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     
-    <!-- Google Tag Manager / Ads Tracking (Asynchronous for PageSpeed) -->
+    <!-- Google Tag Manager / Ads Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11482936231"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -26,7 +25,6 @@
       gtag('js', new Date());
       gtag('config', 'AW-11482936231');
       
-      // دالة تتبع التحويلات لأزرار الاتصال والواتساب
       function trackConversion(url) {
         gtag('event', 'conversion', {
             'send_to': 'AW-11482936231/EBzNCIy868UbEKfnvuMq',
@@ -36,7 +34,7 @@
       }
     </script>
 
-    <!-- Schema.org JSON-LD (لرفع جودة الصفحة في عيون جوجل وخفض سعر النقرة) -->
+    <!-- Schema.org JSON-LD (LocalBusiness & FAQ) لرفع جودة الصفحة في جوجل -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,8 +45,8 @@
           "name": "شركة الرضا لخدمات التنظيف الشاملة",
           "url": "https://elradaclean.github.io",
           "logo": "https://elradaclean.github.io/logo.png",
-          "image": "https://elradaclean.github.io/cover.jpg",
-          "description": "أفضل شركة تنظيف منازل وفلل بعد التشطيب وغسيل السجاد بالبخار في مصر.",
+          "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200",
+          "description": "أفضل شركة تنظيف منازل وفلل بعد التشطيب وغسيل السجاد بالبخار في مصر بأعلى جودة وأقل سعر.",
           "telephone": "+201104490859",
           "priceRange": "$$",
           "address": {
@@ -73,17 +71,31 @@
           "areaServed": ["القاهرة", "الجيزة", "6 أكتوبر", "الشيخ زايد", "التجمع الخامس", "المعادي", "مدينة نصر"]
         },
         {
-          "@type": "WebPage",
-          "@id": "https://elradaclean.github.io/#webpage",
-          "url": "https://elradaclean.github.io",
-          "name": "أفضل شركة تنظيف منازل في مصر",
-          "isPartOf": { "@id": "https://elradaclean.github.io/#organization" }
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "هل مواد التنظيف المستخدمة آمنة على الأطفال والحيوانات الأليفة؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم بكل تأكيد، نحن نستخدم حصرياً مواد تنظيف ومعقمات معتمدة دولياً ومحلياً، صديقة للبيئة وآمنة تماماً."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "كم يستغرق تنظيف الشقة بالكامل أو الفيلا؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "تختلف المدة حسب مساحة المكان وحالته، ولكن بفضل فرقنا المجهزة يتم إنجاز معظم الشقق في غضون يوم عمل واحد."
+              }
+            }
+          ]
         }
       ]
     }
     </script>
 
-    <!-- CSS مدمج لضمان سرعة 100% بدون ملفات خارجية تعطل التحميل -->
+    <!-- الـ CSS المدمج بالكامل لضمان سرعة خيالية 100% -->
     <style>
         /* ==========================================================================
            1. المتغيرات والأساسيات (Variables & Resets)
@@ -99,8 +111,8 @@
             --white: #ffffff;
             --text-dark: #1a1a1a;
             --text-light: #555555;
-            --border-color: #e0e0e0;
-            --shadow-sm: 0 4px 10px rgba(0,0,0,0.05);
+            --border-color: #eaeaea;
+            --shadow-sm: 0 4px 10px rgba(0,0,0,0.04);
             --shadow-md: 0 10px 30px rgba(0,0,0,0.08);
             --transition-fast: 0.2s ease;
             --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -131,7 +143,7 @@
         img { max-width: 100%; height: auto; display: block; }
 
         /* ==========================================================================
-           2. الهيدر (Header & Navigation)
+           2. الهيدر (Header)
            ========================================================================== */
         header {
             position: fixed;
@@ -178,64 +190,100 @@
         }
 
         /* ==========================================================================
-           3. الهيرو (Hero Section) - مصمم لخفض Bounce Rate
+           3. قسم الهيرو المصغر (Hero Section)
            ========================================================================== */
         .hero {
-            padding: 180px 5% 120px;
+            padding: 140px 5% 70px;
             background: linear-gradient(135deg, var(--primary-light) 0%, var(--white) 80%);
             text-align: center;
             position: relative;
         }
 
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; width: 100%; height: 50px;
-            background: var(--bg-color);
-            clip-path: polygon(0 100%, 100% 100%, 100% 0);
-        }
-
         .hero-badge {
             background: rgba(212, 175, 55, 0.15);
             color: #9c7b16;
-            padding: 10px 25px;
+            padding: 8px 22px;
             border-radius: 50px;
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 700;
             display: inline-block;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             border: 1px solid rgba(212,175,55,0.3);
         }
 
         .hero h1 {
-            font-size: clamp(2.2rem, 5vw, 4.5rem);
+            font-size: clamp(2rem, 4.5vw, 3.8rem);
             font-weight: 900;
             line-height: 1.25;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             color: var(--text-dark);
         }
 
         .hero h1 span { color: var(--primary); }
 
         .hero p {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            font-size: clamp(1.05rem, 2vw, 1.2rem);
             color: var(--text-light);
-            max-width: 800px;
-            margin: 0 auto 45px;
+            max-width: 750px;
+            margin: 0 auto 20px;
             font-weight: 600;
         }
 
+        /* أزرار الهيرو المصغرة */
+        .hero-actions-mini {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .btn-mini {
+            padding: 10px 25px;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .btn-mini-wa { 
+            background: var(--whatsapp-green); 
+            color: white; 
+            box-shadow: 0 4px 10px rgba(37,211,102,0.2);
+        }
+        
+        .btn-mini-wa:hover { 
+            background: var(--whatsapp-dark); 
+            transform: translateY(-2px);
+        }
+        
+        .btn-mini-call { 
+            background: var(--white); 
+            color: var(--primary-dark); 
+            border: 1px solid var(--primary); 
+            box-shadow: 0 4px 10px rgba(12,138,62,0.1);
+        }
+        
+        .btn-mini-call:hover { 
+            background: var(--primary); 
+            color: white; 
+            transform: translateY(-2px);
+        }
+
         /* ==========================================================================
-           4. مربعات الخدمات (Services Grid) - طلبك الخاص والمميز
+           4. قسم الخدمات بالصور (Services Grid)
            ========================================================================== */
         .services-section {
-            padding: 100px 5%;
+            padding: 80px 5%;
             background: var(--bg-color);
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .section-title {
@@ -246,7 +294,7 @@
         }
 
         .section-desc {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--text-light);
             max-width: 700px;
             margin: 0 auto;
@@ -254,17 +302,16 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 35px;
-            max-width: 1300px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1250px;
             margin: 0 auto;
         }
 
-        /* تصميم الكارد نفسه */
         .service-card {
             background: var(--white);
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 0;
             box-shadow: var(--shadow-sm);
             border: 1px solid var(--border-color);
             transition: var(--transition-normal);
@@ -272,7 +319,7 @@
             flex-direction: column;
             position: relative;
             overflow: hidden;
-            border-top: 5px solid var(--primary);
+            border-bottom: 5px solid var(--primary);
         }
 
         .service-card:hover {
@@ -281,241 +328,125 @@
             border-color: var(--primary-light);
         }
 
-        .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        .service-img-container {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
         }
 
-        .service-card h3 {
-            font-size: 1.6rem;
+        .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.08);
+        }
+
+        .service-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background: var(--white);
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-content h3 {
+            font-size: 1.5rem;
             font-weight: 900;
             color: var(--primary-dark);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        .service-card p {
-            font-size: 1.05rem;
+        .service-content p {
+            font-size: 1rem;
             color: var(--text-light);
             line-height: 1.8;
-            margin-bottom: 30px;
-            flex-grow: 1; /* لجعل الأزرار دائماً في الأسفل بالتساوي */
+            margin-bottom: 25px;
+            flex-grow: 1;
         }
 
         /* الأزرار الخضراء المزدوجة تحت كل خدمة */
         .card-actions {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            gap: 12px;
             margin-top: auto;
         }
 
         .btn-card {
-            padding: 14px 10px;
-            border-radius: 12px;
+            padding: 12px 10px;
+            border-radius: 10px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 6px;
             transition: var(--transition-normal);
             color: var(--white);
             border: none;
             cursor: pointer;
+            text-decoration: none;
         }
 
-        /* زر الواتساب الأخضر الفاتح */
         .btn-whatsapp-card {
             background: var(--whatsapp-green);
-            box-shadow: 0 4px 15px rgba(37,211,102,0.2);
+            box-shadow: 0 4px 12px rgba(37,211,102,0.2);
         }
 
         .btn-whatsapp-card:hover {
             background: var(--whatsapp-dark);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+            box-shadow: 0 6px 15px rgba(37,211,102,0.3);
         }
 
-        /* زر الاتصال الأخضر الغامق */
         .btn-call-card {
             background: var(--primary);
-            box-shadow: 0 4px 15px rgba(12,138,62,0.2);
+            box-shadow: 0 4px 12px rgba(12,138,62,0.2);
         }
 
         .btn-call-card:hover {
             background: var(--primary-dark);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(12,138,62,0.3);
+            box-shadow: 0 6px 15px rgba(12,138,62,0.3);
         }
 
         /* ==========================================================================
-           5. التجاوب مع الشاشات (Media Queries)
+           5. شريط الثقة (Trust Bar)
            ========================================================================== */
-        @media (max-width: 768px) {
-            header { padding: 15px 20px; }
-            .logo { font-size: 1.5rem; }
-            .hero { padding: 150px 20px 80px; }
-            .services-grid { grid-template-columns: 1fr; }
-            .card-actions { grid-template-columns: 1fr; /* الأزرار فوق بعض في الموبايل لسهولة الضغط */ }
-        }
-    </style>
-</head>
-<body>
-    <!-- ==========================================================================
-         6. الهيدر (Header)
-         ========================================================================== -->
-    <header>
-        <a href="#" class="logo">شركة الرضا <span>للخدمات</span></a>
-        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="header-btn">📞 اتصل الآن</a>
-    </header>
-
-    <!-- ==========================================================================
-         7. قسم الهيرو (Hero Section) - تصميم لرفع نسبة التحويل
-         ========================================================================== -->
-    <section class="hero">
-        <div class="hero-badge">⭐ الخيار الأول والـ موثوق في مصر لعام 2026</div>
-        <h1>هل تبحث عن <span>أفضل شركة تنظيف منازل</span> وفلل؟</h1>
-        <p>نحن لسنا مجرد شركة عادية، بل نقدم معايير احترافية في النظافة العميقة، التعقيم الشامل، وإزالة آثار التشطيب. بيئتك الصحية تبدأ بضغطة زر واحدة بأقل الأسعار وأعلى جودة.</p>
-        
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-            <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمات التنظيف والحجز بخصم 20%.')" style="background: var(--whatsapp-green); color: white; padding: 18px 40px; border-radius: 12px; font-weight: 700; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(37,211,102,0.3); display: flex; align-items: center; gap: 10px; transition: 0.3s; text-decoration: none;">
-                احجز عبر واتساب بخصم 20% 💬
-            </a>
-            <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" style="background: white; color: var(--primary-dark); border: 2px solid var(--primary); padding: 18px 40px; border-radius: 12px; font-weight: 700; font-size: 1.2rem; box-shadow: 0 10px 20px rgba(12,138,62,0.1); display: flex; align-items: center; gap: 10px; transition: 0.3s; text-decoration: none;">
-                تحدث مع خدمة العملاء 📞
-            </a>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-         8. شريط الثقة (Trust Bar) - لتعزيز القرار عند الزبون
-         ========================================================================== -->
-    <div style="background: white; padding: 40px 5%; display: flex; justify-content: space-around; gap: 20px; flex-wrap: wrap; box-shadow: 0 -15px 30px rgba(0,0,0,0.02); position: relative; z-index: 10; margin-top: -50px; border-radius: 24px; width: 90%; max-width: 1200px; margin-left: auto; margin-right: auto; border: 1px solid var(--border-color);">
-        <div style="text-align: center;">
-            <h4 style="font-size: 2.2rem; color: var(--primary-dark); font-weight: 900; margin-bottom: 5px;">+2000</h4>
-            <p style="font-size: 1.1rem; color: var(--text-light); font-weight: 600;">عميل راضٍ تماماً</p>
-        </div>
-        <div style="text-align: center;">
-            <h4 style="font-size: 2.2rem; color: var(--primary-dark); font-weight: 900; margin-bottom: 5px;">100%</h4>
-            <p style="font-size: 1.1rem; color: var(--text-light); font-weight: 600;">ضمان جودة وتعقيم</p>
-        </div>
-        <div style="text-align: center;">
-            <h4 style="font-size: 2.2rem; color: var(--primary-dark); font-weight: 900; margin-bottom: 5px;">أرخص</h4>
-            <p style="font-size: 1.1rem; color: var(--text-light); font-weight: 600;">سعر بين الشركات</p>
-        </div>
-    </div>
-
-    <!-- ==========================================================================
-         9. قسم الخدمات (Services Section) - التصميم المخصص بـ 2 زر أخضر
-         ========================================================================== -->
-    <section class="services-section" id="services">
-        <div class="section-header">
-            <h2 class="section-title">خدماتنا كـ أفضل شركة تنظيف في مصر</h2>
-            <p class="section-desc">نقدم باقة متكاملة واحترافية تغطي كافة احتياجات منزلك، شقتك، أو فيلتك بأعلى معايير الدقة وسرعة التنفيذ.</p>
-        </div>
-        
-        <div class="services-grid">
-            <!-- خدمة 1: تنظيف منازل وشقق -->
-            <div class="service-card">
-                <div class="service-icon">🏠</div>
-                <h3>شركة تنظيف منازل وشقق</h3>
-                <p>خدمة تنظيف عميقة وشاملة لكل غرفة في المنزل. نقوم بإزالة الأتربة، تلميع الأثاث، وتنظيف الأرضيات بدقة لضمان بيئة صحية ونظافة تامة تليق بك.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة تنظيف المنازل والشقق.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-
-            <!-- خدمة 2: تنظيف بعد التشطيب -->
-            <div class="service-card">
-                <div class="service-icon">🏗️</div>
-                <h3>شركة تنظيف بعد التشطيب</h3>
-                <p>وداعاً لإرهاق ما بعد البناء! تخصص احترافي في إزالة بقايا الدهانات، الأسمنت، والجبس. نسلمك شقتك أو فيلتك جاهزة للسكن الفوري بدون أي أثر للغبار.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة التنظيف بعد التشطيب.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-
-            <!-- خدمة 3: غسيل السجاد والمفروشات -->
-            <div class="service-card">
-                <div class="service-icon">🛋️</div>
-                <h3>غسيل سجاد ومفروشات بالبخار</h3>
-                <p>نعتمد على أحدث ماكينات البخار لإزالة البقع المستعصية والروائح من السجاد، الموكيت، الكنب، والستائر مع التعقيم الكامل والحفاظ على الألوان والملمس.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة غسيل السجاد والمفروشات بالبخار.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-
-            <!-- خدمة 4: تنظيف الفلل والقصور -->
-            <div class="service-card">
-                <div class="service-icon">🏡</div>
-                <h3>تنظيف الفلل والقصور والواجهات</h3>
-                <p>لدينا فرق عمل مجهزة للتعامل مع المساحات الكبيرة. تنظيف شامل للواجهات الزجاجية والحجرية، العناية بالحدائق، وتجهيز الملاحق الخاصة بأعلى جودة.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة تنظيف الفلل والقصور.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-
-            <!-- خدمة 5: تعقيم المطابخ والحمامات -->
-            <div class="service-card">
-                <div class="service-icon">🦠</div>
-                <h3>تعقيم شامل للمطابخ والحمامات</h3>
-                <p>تطهير عميق للتخلص من الجراثيم والبكتيريا المسببة للأمراض. نقوم بإزالة أصعب الدهون المتراكمة في المطابخ باستخدام مواد تعقيم آمنة ومصرح بها صحياً.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة تعقيم المطابخ والحمامات.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-
-            <!-- خدمة 6: جلي وتلميع الرخام -->
-            <div class="service-card">
-                <div class="service-icon">💎</div>
-                <h3>جلي وتلميع الرخام والأرضيات</h3>
-                <p>نعيد اللمعان والبريق لأرضيات الرخام والسيراميك والبورسلين. معالجة الخدوش والبهتان بأحدث ماكينات الجلي العالمية لتبدو أرضيات منزلك كالجديدة.</p>
-                <div class="card-actions">
-                    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن خدمة جلي وتلميع الرخام.')" class="btn-card btn-whatsapp-card">
-                        واتساب 💬
-                    </a>
-                    <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">
-                        اتصال 📞
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========================================================================
-         10. قسم كيف نعمل (How it Works) - خطوات مبسطة تزيد من سرعة اتخاذ القرار
-         ========================================================================== -->
-    <style>
-        .steps-section {
-            padding: 90px 5%;
+        .trust-bar {
             background: var(--white);
+            padding: 40px 5%;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .trust-item { text-align: center; }
+        .trust-item h4 { font-size: 2.2rem; color: var(--primary-dark); font-weight: 900; margin-bottom: 5px; }
+        .trust-item p { font-size: 1.1rem; color: var(--text-light); font-weight: 600; }
+
+        /* ==========================================================================
+           6. قسم خطوات العمل (How it Works)
+           ========================================================================== */
+        .steps-section {
+            padding: 80px 5%;
+            background: var(--white);
         }
         .steps-grid {
             display: grid;
@@ -531,8 +462,6 @@
             border-radius: 20px;
             border: 1px solid rgba(12,138,62,0.1);
             transition: var(--transition-normal);
-            position: relative;
-            z-index: 1;
         }
         .step-card:hover {
             transform: translateY(-5px);
@@ -554,55 +483,16 @@
             margin: 0 auto 20px;
             box-shadow: 0 5px 15px rgba(12,138,62,0.3);
         }
-        .step-card h4 {
-            font-size: 1.4rem;
-            margin-bottom: 12px;
-            color: var(--primary-dark);
-            font-weight: 900;
-        }
-        .step-card p {
-            color: var(--text-light);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-    </style>
+        .step-card h4 { font-size: 1.4rem; margin-bottom: 12px; color: var(--primary-dark); font-weight: 900; }
+        .step-card p { color: var(--text-light); font-size: 1rem; line-height: 1.7; }
 
-    <section class="steps-section">
-        <div class="section-header">
-            <h2 class="section-title">كيف تحجز خدمتك في ثوانٍ معدودة؟</h2>
-            <p class="section-desc">نظام حجز سلس ومباشر بدون تعقيدات أو نماذج طويلة. راحتك تبدأ من أول تواصل معنا.</p>
-        </div>
-        <div class="steps-grid">
-            <div class="step-card">
-                <div class="step-num">1</div>
-                <h4>تواصل معنا</h4>
-                <p>اضغط على زر الواتساب أو الاتصال المباشر المتواجد تحت كل خدمة لطرح طلبك واستفسارك فوراً.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-num">2</div>
-                <h4>تحديد الموعد</h4>
-                <p>سيقوم فريق خدمة العملاء بالرد عليك فوراً لتقديم عرض السعر وتحديد الوقت المناسب لك بدقة.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-num">3</div>
-                <h4>التنفيذ الاحترافي</h4>
-                <p>يصل فريقنا المتخصص والمجهز بأحدث المعدات في الموعد المحدد لإنجاز العمل بأعلى جودة ممكنة.</p>
-            </div>
-            <div class="step-card">
-                <div class="step-num">4</div>
-                <h4>استلام وراحة بال</h4>
-                <p>استلم بيتك نظيفاً، لامعاً، ومعقماً تماماً. لن تدفع حتى تتأكد من رضاك التام عن النتيجة.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-         11. قسم مميزات الشركة (Why Choose Us) - لتعزيز الثقة والمبيعات
-         ========================================================================== -->
-    <style>
+        /* ==========================================================================
+           7. قسم مميزات الشركة (Why Choose Us)
+           ========================================================================== */
         .advantages-section {
-            padding: 90px 5%;
+            padding: 80px 5%;
             background: var(--bg-color);
+            border-top: 1px solid var(--border-color);
         }
         .adv-grid {
             display: grid;
@@ -633,42 +523,14 @@
             align-items: center;
             gap: 10px;
         }
-        .adv-desc {
-            color: var(--text-light);
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-    </style>
+        .adv-desc { color: var(--text-light); font-size: 1.05rem; line-height: 1.8; }
 
-    <section class="advantages-section">
-        <div class="section-header">
-            <h2 class="section-title">لماذا تختار "شركة الرضا" تحديداً؟</h2>
-            <p class="section-desc">لأننا نجمع بين الخبرة الطويلة، التكنولوجيا الحديثة في التنظيف، والأسعار التي تناسب كل ميزانية.</p>
-        </div>
-        <div class="adv-grid">
-            <div class="adv-card">
-                <h3 class="adv-title">🛡️ ضمان حقيقي وفعلي</h3>
-                <p class="adv-desc">نحن نثق في جودة عملنا بنسبة 100%، لذا نقدم ضماناً يتيح لك طلب إعادة التنظيف مجاناً إذا لاحظت أي تقصير، فرضاك هو غايتنا الأولى.</p>
-            </div>
-            <div class="adv-card">
-                <h3 class="adv-title">🌿 مواد آمنة ومصرح بها</h3>
-                <p class="adv-desc">صحة عائلتك تهمنا. نستخدم منظفات ومعقمات مستوردة وصديقة للبيئة، قاهرة للأوساخ ولكنها آمنة تماماً على الأطفال والحيوانات الأليفة.</p>
-            </div>
-            <div class="adv-card">
-                <h3 class="adv-title">⚡ التزام صارم بالمواعيد</h3>
-                <p class="adv-desc">نحن نقدر وقتك الثمين. بمجرد حجز الموعد، نضمن لك وصول فريقنا في الوقت المحدد بالضبط دون أي تأخير لضمان عدم تعطيل جدولك اليومي.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================================================
-         12. قسم المحتوى الغني بالسيو (SEO Content) - الدفعة السحرية لجوجل
-         ========================================================================== -->
-    <style>
+        /* ==========================================================================
+           8. قسم السيو (SEO Rich Content)
+           ========================================================================== */
         .seo-section {
-            padding: 80px 5%;
+            padding: 70px 5%;
             background: var(--white);
-            border-top: 1px solid var(--border-color);
         }
         .seo-container {
             max-width: 1100px;
@@ -690,98 +552,265 @@
             line-height: 2;
             margin-bottom: 15px;
         }
-    </style>
 
-    <section class="seo-section">
-        <div class="seo-container">
-            <h3>دليلك لاختيار أفضل شركة تنظيف منازل في القاهرة والجيزة</h3>
-            <p>
-                مع تزايد وتيرة الحياة السريعة، أصبح الاعتماد على <strong>شركة تنظيف منازل احترافية</strong> أمراً ضرورياً وليس رفاهية. في "شركة الرضا"، نفهم تماماً التحديات التي تواجه ربات البيوت وأصحاب الشركات في الحفاظ على بيئة نظيفة ومعقمة. لذلك، قمنا بتجهيز فرق عمل متخصصة تغطي كافة الخدمات: بدءاً من <strong>تنظيف الشقق والفلل</strong>، مروراً بـ <strong>غسيل السجاد والمفروشات بالبخار</strong>، وصولاً إلى المهمة الأصعب وهي <strong>التنظيف بعد التشطيب والبناء</strong>.
-            </p>
-            <p>
-                نحن لا نكتفي بمسح الأسطح بل نقدم خدمة تعقيم عميقة تقضي على البكتيريا والفيروسات، مع الاهتمام بـ <strong>جلي وتلميع الرخام</strong> ليعود كالمرآة. كل هذه الخدمات تقدم بأفضل <strong>أسعار شركات التنظيف في مصر</strong>، مما يجعلنا الخيار الأول والوحيد لمن يبحث عن الجودة العالية والتكلفة الاقتصادية في نفس الوقت.
-            </p>
-        </div>
-    </section>
-    <!-- ==========================================================================
-         13. منطقة التغطية الجغرافية (Coverage Area)
-         ========================================================================== -->
-    <style>
+        /* ==========================================================================
+           9. التغطية، الآراء، والأسئلة الشائعة
+           ========================================================================== */
         .coverage-section {
             background: var(--primary-dark);
             color: var(--white);
             text-align: center;
-            padding: 70px 5%;
-            margin: 0;
+            padding: 60px 5%;
         }
-        .coverage-container {
-            max-width: 1000px;
-            margin: 0 auto;
+        .coverage-title { font-size: 2rem; font-weight: 900; margin-bottom: 15px; color: var(--gold); }
+        
+        .testimonials-section { padding: 80px 5%; background: var(--bg-color); }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .testimo-card { background: var(--white); padding: 35px; border-radius: 20px; border: 1px solid var(--border-color); border-right: 5px solid var(--gold); box-shadow: var(--shadow-sm); transition: var(--transition-normal); }
+        .testimo-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .testimo-text { font-size: 1.05rem; color: var(--text-dark); font-style: italic; line-height: 1.8; margin-bottom: 20px; }
+        .testimo-author { font-weight: 900; color: var(--primary-dark); font-size: 1rem; }
+
+        .faq-section { padding: 80px 5%; background: var(--white); }
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: var(--bg-color); padding: 30px; border-radius: 15px; margin-bottom: 20px; border: 1px solid var(--border-color); }
+        .faq-question { font-size: 1.25rem; font-weight: 900; color: var(--primary-dark); margin-bottom: 10px; }
+        .faq-answer { font-size: 1rem; color: var(--text-light); line-height: 1.8; }
+
+        /* ==========================================================================
+           10. الفوتر والبانر السفلي
+           ========================================================================== */
+        .bottom-cta { background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; text-align: center; padding: 70px 20px; }
+        
+        footer { background: #042a13; color: white; text-align: center; padding: 60px 20px 30px; border-top: 4px solid var(--gold); }
+        .footer-links a { color: white; margin: 0 10px; font-weight: 600; text-decoration: none; transition: 0.3s; }
+        .footer-links a:hover { color: var(--gold); }
+
+        /* ==========================================================================
+           11. زر الواتساب العائم
+           ========================================================================== */
+        .floating-whatsapp {
+            position: fixed; bottom: 30px; right: 30px; background-color: var(--whatsapp-green); color: #fff; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 9999; transition: var(--transition-normal); animation: pulse-whatsapp 2s infinite; text-decoration: none; font-size: 35px;
         }
-        .coverage-title {
-            font-size: 2.2rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            color: var(--gold);
-        }
-        .coverage-desc {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            opacity: 0.95;
+        .floating-whatsapp:hover { background-color: var(--whatsapp-dark); transform: scale(1.1); }
+        @keyframes pulse-whatsapp { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+
+        /* ==========================================================================
+           12. التجاوب مع الموبايل (Media Queries)
+           ========================================================================== */
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; }
+            .logo { font-size: 1.5rem; }
+            .header-btn { padding: 8px 16px; font-size: 1rem; }
+            .hero { padding: 120px 20px 60px; }
+            .card-actions { grid-template-columns: 1fr; }
+            .trust-bar { flex-direction: column; gap: 30px; }
+            .floating-whatsapp { bottom: 20px; right: 20px; width: 55px; height: 55px; font-size: 30px; }
         }
     </style>
+</head>
+<body>
 
-    <section class="coverage-section">
-        <div class="coverage-container">
-            <h2 class="coverage-title">📍 نغطي كافة مناطق القاهرة والجيزة والمدن الجديدة</h2>
-            <p class="coverage-desc">
-                أسطول سياراتنا مجهز للوصول إليك أينما كنت بأقصى سرعة: القاهرة، الجيزة، 6 أكتوبر، الشيخ زايد، التجمع الخامس، القاهرة الجديدة، المعادي، مدينة نصر، ومصر الجديدة. راحتك تبدأ من سرعة وصولنا إليك.
-            </p>
+    <!-- الهيدر -->
+    <header>
+        <a href="#" class="logo">شركة الرضا <span>للخدمات</span></a>
+        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="header-btn">📞 اتصل الآن</a>
+    </header>
+
+    <!-- الهيرو المصغر -->
+    <section class="hero">
+        <div class="hero-badge">⭐ الخيار الأول والـ موثوق في مصر لعام 2026</div>
+        <h1>هل تبحث عن <span>أفضل شركة تنظيف منازل</span> وفلل؟</h1>
+        <p>نحن لسنا مجرد شركة عادية، بل نقدم معايير احترافية في النظافة العميقة، التعقيم الشامل، وإزالة آثار التشطيب بأقل الأسعار.</p>
+        
+        <div class="hero-actions-mini">
+            <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859')" class="btn-mini btn-mini-wa">واتساب 💬</a>
+            <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-mini btn-mini-call">اتصال 📞</a>
         </div>
     </section>
 
-    <!-- ==========================================================================
-         14. آراء العملاء (Testimonials) - لزيادة الموثوقية (Social Proof)
-         ========================================================================== -->
-    <style>
-        .testimonials-section {
-            padding: 90px 5%;
-            background: var(--bg-color);
-        }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .testimo-card {
-            background: var(--white);
-            padding: 35px;
-            border-radius: 20px;
-            border: 1px solid var(--border-color);
-            border-right: 5px solid var(--gold);
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition-normal);
-        }
-        .testimo-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-md);
-        }
-        .testimo-text {
-            font-size: 1.1rem;
-            color: var(--text-dark);
-            font-style: italic;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-        .testimo-author {
-            font-weight: 900;
-            color: var(--primary-dark);
-            font-size: 1.05rem;
-        }
-    </style>
+    <!-- الخدمات بالصور (مرفوعة لأعلى) -->
+    <section class="services-section" id="services">
+        <div class="section-header">
+            <h2 class="section-title">خدماتنا كـ أفضل شركة تنظيف في مصر</h2>
+            <p class="section-desc">اختر الخدمة التي تناسبك واضغط على زر التواصل للحجز الفوري.</p>
+        </div>
+        
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="تنظيف منازل وشقق" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>🏠 تنظيف منازل وشقق</h3>
+                    <p>خدمة تنظيف عميقة وشاملة لكل غرفة في المنزل لضمان بيئة صحية ونظافة تامة تليق بك.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن تنظيف المنازل.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
 
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?w=600&q=80" alt="تنظيف بعد التشطيب" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>🏗️ تنظيف بعد التشطيب</h3>
+                    <p>إزالة تامة لبقايا الدهانات، الأسمنت، والجبس. نسلمك شقتك جاهزة للسكن الفوري بدون أثر للغبار.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن التنظيف بعد التشطيب.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1632829882885-303102377bce?w=600&q=80" alt="غسيل سجاد بالبخار" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>🛋️ غسيل سجاد ومفروشات</h3>
+                    <p>أحدث ماكينات البخار لإزالة البقع المستعصية والروائح من السجاد والكنب مع التعقيم الكامل.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن غسيل السجاد والمفروشات.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="تنظيف الفلل" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>🏡 تنظيف الفلل والواجهات</h3>
+                    <p>فرق عمل للتعامل مع المساحات الكبيرة، تنظيف الواجهات الزجاجية والحجرية بأعلى جودة.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن تنظيف الفلل.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80" alt="تعقيم المطابخ" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>🦠 تعقيم مطابخ وحمامات</h3>
+                    <p>إزالة الدهون المتراكمة وتطهير عميق للتخلص من الجراثيم باستخدام مواد معتمدة صحياً.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن تعقيم المطابخ.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img-container">
+                    <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?w=600&q=80" alt="جلي وتلميع الرخام" class="service-img" loading="lazy">
+                </div>
+                <div class="service-content">
+                    <h3>💎 جلي وتلميع الرخام</h3>
+                    <p>إعادة البريق واللمعان لأرضيات الرخام والسيراميك ومعالجة الخدوش لتبدو كالجديدة تماماً.</p>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد الاستفسار عن جلي الرخام.')" class="btn-card btn-whatsapp-card">واتساب 💬</a>
+                        <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" class="btn-card btn-call-card">اتصال 📞</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- شريط الثقة (بعد الخدمات) -->
+    <div class="trust-bar">
+        <div class="trust-item">
+            <h4>+2000</h4>
+            <p>عميل راضٍ تماماً</p>
+        </div>
+        <div class="trust-item">
+            <h4>100%</h4>
+            <p>ضمان جودة وتعقيم</p>
+        </div>
+        <div class="trust-item">
+            <h4>أرخص</h4>
+            <p>سعر بين الشركات</p>
+        </div>
+    </div>
+
+    <!-- خطوات العمل -->
+    <section class="steps-section">
+        <div class="section-header">
+            <h2 class="section-title">كيف تحجز خدمتك في ثوانٍ معدودة؟</h2>
+            <p class="section-desc">نظام حجز سلس ومباشر بدون تعقيدات أو نماذج طويلة. راحتك تبدأ من أول تواصل معنا.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-num">1</div>
+                <h4>تواصل معنا</h4>
+                <p>اضغط على زر الواتساب أو الاتصال المباشر المتواجد تحت كل خدمة لطرح طلبك.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">2</div>
+                <h4>تحديد الموعد</h4>
+                <p>سيقوم فريق خدمة العملاء بالرد عليك فوراً لتقديم عرض السعر وتحديد الوقت المناسب.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">3</div>
+                <h4>التنفيذ الاحترافي</h4>
+                <p>يصل فريقنا المتخصص في الموعد المحدد لإنجاز العمل بأعلى جودة ممكنة.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-num">4</div>
+                <h4>استلام وراحة بال</h4>
+                <p>استلم بيتك نظيفاً، لامعاً، ومعقماً تماماً. لن تدفع حتى تتأكد من رضاك التام.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- مميزات الشركة -->
+    <section class="advantages-section">
+        <div class="section-header">
+            <h2 class="section-title">لماذا تختار "شركة الرضا" تحديداً؟</h2>
+            <p class="section-desc">لأننا نجمع بين الخبرة الطويلة، التكنولوجيا الحديثة، والأسعار التي تناسب كل ميزانية.</p>
+        </div>
+        <div class="adv-grid">
+            <div class="adv-card">
+                <h3 class="adv-title">🛡️ ضمان حقيقي وفعلي</h3>
+                <p class="adv-desc">نحن نثق في جودة عملنا بنسبة 100%، لذا نقدم ضماناً يتيح لك طلب إعادة التنظيف مجاناً إذا لاحظت أي تقصير.</p>
+            </div>
+            <div class="adv-card">
+                <h3 class="adv-title">🌿 مواد آمنة ومصرح بها</h3>
+                <p class="adv-desc">صحة عائلتك تهمنا. نستخدم منظفات ومعقمات صديقة للبيئة وآمنة تماماً على الأطفال والحيوانات الأليفة.</p>
+            </div>
+            <div class="adv-card">
+                <h3 class="adv-title">⚡ التزام صارم بالمواعيد</h3>
+                <p class="adv-desc">نحن نقدر وقتك الثمين. بمجرد حجز الموعد، نضمن لك وصول فريقنا في الوقت المحدد بالضبط دون تأخير.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- السيو -->
+    <section class="seo-section">
+        <div class="seo-container">
+            <h3>دليلك لاختيار أفضل شركة تنظيف منازل في القاهرة والجيزة</h3>
+            <p>مع تزايد وتيرة الحياة السريعة، أصبح الاعتماد على <strong>شركة تنظيف منازل احترافية</strong> أمراً ضرورياً وليس رفاهية. في "شركة الرضا"، نفهم تماماً التحديات التي تواجه ربات البيوت وأصحاب الشركات في الحفاظ على بيئة نظيفة ومعقمة. لذلك، قمنا بتجهيز فرق عمل متخصصة تغطي كافة الخدمات: بدءاً من <strong>تنظيف الشقق والفلل</strong>، مروراً بـ <strong>غسيل السجاد والمفروشات بالبخار</strong>، وصولاً إلى المهمة الأصعب وهي <strong>التنظيف بعد التشطيب والبناء</strong>.</p>
+            <p>نحن لا نكتفي بمسح الأسطح بل نقدم خدمة تعقيم عميقة تقضي على البكتيريا والفيروسات، مع الاهتمام بـ <strong>جلي وتلميع الرخام</strong> ليعود كالمرآة. كل هذه الخدمات تقدم بأفضل <strong>أسعار شركات التنظيف في مصر</strong>، مما يجعلنا الخيار الأول لمن يبحث عن الجودة والتكلفة الاقتصادية.</p>
+        </div>
+    </section>
+
+    <!-- التغطية الجغرافية -->
+    <section class="coverage-section">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="coverage-title">📍 نغطي كافة مناطق القاهرة والجيزة والمدن الجديدة</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8; opacity: 0.95;">أسطول سياراتنا مجهز للوصول إليك أينما كنت بأقصى سرعة: القاهرة، الجيزة، 6 أكتوبر، الشيخ زايد، التجمع الخامس، القاهرة الجديدة، المعادي، مدينة نصر، ومصر الجديدة.</p>
+        </div>
+    </section>
+
+    <!-- الآراء -->
     <section class="testimonials-section">
         <div class="section-header">
             <h2 class="section-title">ماذا يقول عملاؤنا عنا؟</h2>
@@ -789,57 +818,21 @@
         </div>
         <div class="testimonials-grid">
             <div class="testimo-card">
-                <p class="testimo-text">"أفضل شركة تعاملت معها، التزام تام بالمواعيد، ونظافة الفيلا بعد التشطيب كانت مذهلة وكأن لم يكن هناك بناء أو دهانات سابقه أبداً. شغل فاخر من الآخر."</p>
+                <p class="testimo-text">"أفضل شركة تعاملت معها، التزام تام بالمواعيد، ونظافة الفيلا بعد التشطيب كانت مذهلة وكأن لم يكن هناك بناء أو دهانات سابقه أبداً."</p>
                 <div class="testimo-author">- مهندس أحمد، التجمع الخامس</div>
             </div>
             <div class="testimo-card">
-                <p class="testimo-text">"خدمة غسيل الكنب والسجاد بالبخار رجعتهم كأنهم لسة شارياهم حالا. بجد شكراً لشركة الرضا على السرعة والاحترافية الفائقة في التعامل، والأسعار ممتازة."</p>
+                <p class="testimo-text">"خدمة غسيل الكنب والسجاد بالبخار رجعتهم كأنهم لسة شارياهم حالا. بجد شكراً لشركة الرضا على السرعة والاحترافية الفائقة والأسعار الممتازة."</p>
                 <div class="testimo-author">- أسامة محمود، الشيخ زايد</div>
             </div>
             <div class="testimo-card">
-                <p class="testimo-text">"فريق العمل محترم جداً، منظمين للغاية، واستخدموا مواد تنظيف برائحة جميلة وآمنة جداً على الأطفال والبيت. أنصح الجميع بالتعامل معهم بانتظام وبدون تردد."</p>
+                <p class="testimo-text">"فريق العمل محترم جداً، منظمين للغاية، واستخدموا مواد تنظيف برائحة جميلة وآمنة جداً. أنصح الجميع بالتعامل معهم بانتظام وبدون تردد."</p>
                 <div class="testimo-author">- د. هالة سمير، المعادي</div>
             </div>
         </div>
     </section>
 
-    <!-- ==========================================================================
-         15. الأسئلة الشائعة (FAQ)
-         ========================================================================== -->
-    <style>
-        .faq-section {
-            padding: 90px 5%;
-            background: var(--white);
-            border-top: 1px solid var(--border-color);
-        }
-        .faq-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: var(--bg-color);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border: 1px solid var(--border-color);
-            transition: var(--transition-fast);
-        }
-        .faq-item:hover {
-            border-color: var(--primary);
-        }
-        .faq-question {
-            font-size: 1.3rem;
-            font-weight: 900;
-            color: var(--primary-dark);
-            margin-bottom: 12px;
-        }
-        .faq-answer {
-            font-size: 1.05rem;
-            color: var(--text-light);
-            line-height: 1.8;
-        }
-    </style>
-
+    <!-- الأسئلة الشائعة -->
     <section class="faq-section" id="faq">
         <div class="section-header">
             <h2 class="section-title">الأسئلة الشائعة</h2>
@@ -852,41 +845,37 @@
             </div>
             <div class="faq-item">
                 <h4 class="faq-question">كم يستغرق تنظيف الشقة بالكامل أو الفيلا؟</h4>
-                <p class="faq-answer">تختلف المدة حسب مساحة المكان وحالته (تنظيف دوري أم تنظيف عميق بعد التشطيب)، ولكن بفضل فرقنا المجهزة، يتم إنجاز معظم الشقق السكنية في غضون يوم عمل واحد بأعلى كفاءة.</p>
+                <p class="faq-answer">تختلف المدة حسب مساحة المكان وحالته، ولكن بفضل فرقنا المجهزة، يتم إنجاز معظم الشقق السكنية في غضون يوم عمل واحد بأعلى كفاءة.</p>
             </div>
             <div class="faq-item">
                 <h4 class="faq-question">كيف يتم حساب التكلفة وأسعار خدمات التنظيف؟</h4>
-                <p class="faq-answer">يتم تحديد السعر بشفافية تامة بناءً على المساحة ونوع الخدمة المطلوبة. نقدم أرخص الأسعار مقارنة بجودة الخدمة، ويمكنك معرفة التكلفة الدقيقة فور تواصلك معنا عبر الواتساب.</p>
+                <p class="faq-answer">يتم تحديد السعر بشفافية تامة بناءً على المساحة ونوع الخدمة المطلوبة. نقدم أرخص الأسعار مقارنة بجودة الخدمة، ويمكنك معرفة التكلفة الدقيقة فور تواصلك معنا.</p>
             </div>
         </div>
     </section>
 
-    <!-- ==========================================================================
-         16. دعوة نهائية لاتخاذ إجراء (Bottom CTA Banner)
-         ========================================================================== -->
-    <section style="background: linear-gradient(135deg, var(--primary-dark), var(--primary)); color: white; text-align: center; padding: 80px 20px; margin: 0; box-shadow: 0 -10px 30px rgba(0,0,0,0.1);">
+    <!-- دعوة اتخاذ إجراء سفلية -->
+    <section class="bottom-cta">
         <div style="max-width: 900px; margin: 0 auto;">
-            <h2 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 20px; color: white;">جاهز لتستلم بيتك يزهو بالنظافة والتعقيم؟</h2>
+            <h2 style="font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 900; margin-bottom: 20px;">جاهز لتستلم بيتك يزهو بالنظافة والتعقيم؟</h2>
             <p style="font-size: 1.2rem; opacity: 0.95; margin-bottom: 40px; line-height: 1.8;">لا ترهق نفسك بالتنظيف بعد اليوم. تواصل معنا الآن واحصل على معاينة مجانية وخصم حصري 20% لفترة محدودة جداً.</p>
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أريد حجز خدمة تنظيف فورية والاستفادة من عرض الـ 20%.')" style="background: var(--whatsapp-green); color: white; padding: 18px 45px; border-radius: 12px; font-weight: 900; font-size: 1.2rem; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: 0.3s; text-decoration: none;">احجز عبر واتساب 💬</a>
-                <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" style="background: white; color: var(--primary-dark); padding: 18px 45px; border-radius: 12px; font-weight: 900; font-size: 1.2rem; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: 0.3s; text-decoration: none;">تواصل هاتفياً 📞</a>
+                <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859')" style="background: var(--whatsapp-green); color: white; padding: 18px 45px; border-radius: 12px; font-weight: 900; font-size: 1.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">احجز عبر واتساب 💬</a>
+                <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" style="background: white; color: var(--primary-dark); padding: 18px 45px; border-radius: 12px; font-weight: 900; font-size: 1.2rem; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">تواصل هاتفياً 📞</a>
             </div>
         </div>
     </section>
 
-    <!-- ==========================================================================
-         17. الفوتر (Footer)
-         ========================================================================== -->
-    <footer style="background: #042a13; color: white; text-align: center; padding: 60px 20px 30px;">
+    <!-- الفوتر -->
+    <footer>
         <div style="max-width: 1200px; margin: 0 auto;">
             <h3 style="font-size: 2rem; margin-bottom: 15px; font-weight: 900; color: var(--gold);">شركة الرضا لخدمات التنظيف الشاملة</h3>
             <p style="font-size: 1.1rem; opacity: 0.8; max-width: 700px; margin: 0 auto 30px; line-height: 1.8;">الخيار الأول في تنظيف المنازل، الفلل، الشركات، وغسيل السجاد والمفروشات بالبخار في مصر بمعايير جودة أوروبية وأسعار اقتصادية.</p>
             
-            <div style="display: flex; justify-content: center; gap: 25px; margin-bottom: 30px; flex-wrap: wrap;">
-                <a href="#services" style="color: white; text-decoration: none; font-weight: 700; opacity: 0.9; transition: 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='white'">الخدمات</a>
-                <a href="#faq" style="color: white; text-decoration: none; font-weight: 700; opacity: 0.9; transition: 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='white'">الأسئلة الشائعة</a>
-                <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')" style="color: white; text-decoration: none; font-weight: 700; opacity: 0.9; transition: 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='white'">اتصل بنا</a>
+            <div class="footer-links" style="display: flex; justify-content: center; gap: 25px; margin-bottom: 30px; flex-wrap: wrap;">
+                <a href="#services">الخدمات</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+                <a href="javascript:void(0)" onclick="trackConversion('tel:01104490859')">اتصل بنا</a>
             </div>
             
             <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-top: 20px;">
@@ -895,55 +884,10 @@
         </div>
     </footer>
 
-    <!-- ==========================================================================
-         18. زر الواتساب العائم النابض (Floating WhatsApp Button)
-         ========================================================================== -->
-    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859?text=أهلاً شركة الرضا، أحتاج إلى خدمة تنظيف سريعة لمنزلي.')" class="floating-whatsapp" aria-label="تواصل معنا عبر واتساب">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
+    <!-- زر الواتساب العائم -->
+    <a href="javascript:void(0)" onclick="trackConversion('https://wa.me/201104490859')" class="floating-whatsapp" aria-label="تواصل معنا عبر واتساب">
+        💬
     </a>
 
-    <style>
-        .floating-whatsapp {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: var(--whatsapp-green);
-            color: #fff;
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-            z-index: 9999;
-            transition: var(--transition-normal);
-            animation: pulse-whatsapp 2s infinite;
-        }
-        .floating-whatsapp:hover {
-            background-color: var(--whatsapp-dark);
-            transform: scale(1.1);
-            color: #fff;
-        }
-        @keyframes pulse-whatsapp {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-        @media (max-width: 768px) {
-            .floating-whatsapp {
-                bottom: 20px;
-                right: 20px;
-                width: 60px;
-                height: 60px;
-            }
-            .floating-whatsapp svg {
-                width: 30px;
-                height: 30px;
-            }
-        }
-    </style>
 </body>
 </html>
